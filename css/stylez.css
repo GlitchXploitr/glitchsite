@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+.headbox{
+  position: relative;
+  display: inline-block;
+  opacity: 0.5;
+  width: 822px;
+  height: 462px;
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 80px;
+    right: 80px;
+    height: 462px;
+    box-shadow: 0 0 0 rgba(#000, 0.4);
+  }
+}
+
+/* OPENED Menu */
+nav {
+  top: 0;
+  left: 100%;
+  color: white;
+  z-index: 1;
+  background: rgba(8,21,33,0.8);
+}
+nav ul li.animate {
+  top: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 1em 2em;
+  cursor: pointer;
+  position: relative;
+  top: -8em;
+}
+nav ul li:nth-child(1) {
+  -moz-transition: top 0.3s ease 0.15s;
+  -o-transition: top 0.3s ease 0.15s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.15s;
+  transition: top 0.3s ease 0.15s;
+}
+nav ul li:nth-child(2) {
+  -moz-transition: top 0.3s ease 0.2s;
+  -o-transition: top 0.3s ease 0.2s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.2s;
+  transition: top 0.3s ease 0.2s;
+}
+nav ul li:nth-child(3) {
+  -moz-transition: top 0.3s ease 0.25s;
+  -o-transition: top 0.3s ease 0.25s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.25s;
+  transition: top 0.3s ease 0.25s;
+}
+nav ul li:nth-child(4) {
+  -moz-transition: top 0.3s ease 0.3s;
+  -o-transition: top 0.3s ease 0.3s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.3s;
+  transition: top 0.3s ease 0.3s;
+}
+nav ul li:nth-child(5) {
+  -moz-transition: top 0.3s ease 0.35s;
+  -o-transition: top 0.3s ease 0.35s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.35s;
+  transition: top 0.3s ease 0.35s;
+}
+nav ul li:hover {
+  opacity: 1;
+}
+nav ul li i {
+  font-size: 1.5em;
+  background: #10d7af;
+  padding: 0.75em;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  text-shadow: 0px 0px #0ca888, 1px 1px #0ca888, 2px 2px #0ca888, 3px 3px #0ca888, 4px 4px #0ca888, 5px 5px #0ca888, 6px 6px #0ca888, 7px 7px #0ca888, 8px 8px #0ca888, 9px 9px #0ca888, 10px 10px #0ca888, 11px 11px #0ca888, 12px 12px #0ca888, 13px 13px #0ca888, 14px 14px #0ca888, 15px 15px #0ca888, 16px 16px #0ca888, 17px 17px #0ca888, 18px 18px #0ca888, 19px 19px #0ca888, 20px 20px #0ca888, 21px 21px #0ca888, 22px 22px #0ca888, 23px 23px #0ca888, 24px 24px #0ca888, 25px 25px #0ca888, 26px 26px #0ca888, 27px 27px #0ca888, 28px 28px #0ca888, 29px 29px #0ca888, 30px 30px #0ca888, 31px 31px #0ca888, 32px 32px #0ca888, 33px 33px #0ca888, 34px 34px #0ca888, 35px 35px #0ca888, 36px 36px #0ca888, 37px 37px #0ca888, 38px 38px #0ca888, 39px 39px #0ca888, 40px 40px #0ca888, 41px 41px #0ca888, 42px 42px #0ca888, 43px 43px #0ca888, 44px 44px #0ca888, 45px 45px #0ca888, 46px 46px #0ca888, 47px 47px #0ca888, 48px 48px #0ca888, 49px 49px #0ca888, 50px 50px #0ca888, 51px 51px #0ca888, 52px 52px #0ca888, 53px 53px #0ca888, 54px 54px #0ca888, 55px 55px #0ca888, 56px 56px #0ca888, 57px 57px #0ca888, 58px 58px #0ca888, 59px 59px #0ca888, 60px 60px #0ca888;
+}
+nav ul li h4 {
+  line-height: 2.5;
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 51;
+}
+.animation-container span {
+  color: red;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-shadow: 0 0 1px red;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 41;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+.menu {
+    font-family: 'VT323';
+		padding-top: .3%;
+    padding-bottom: .3%;
+    position: sticky;
+    text-decoration: none;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 0px;
+}
+.menu li {
+  display: inline;
+}
+.menu a {
+  padding: 12px 17px; 
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  z-index: 10;
+  line-height: 5px;
+  -webkit-transition: all 0.225s;
+  transition: all 0.225s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+.menu-item {    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.225s;
+  transition: all 0.225s;
+  -webkit-transform: scale(0.9) skew(0deg, 0deg);
+          transform: scale(0.9) skew(0deg, 0deg);
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+.menu-item:before, .menu-item:after {
+  content: '';
+  height: 4px;
+  position: absolute;
+  -webkit-transition: all 0.375s;
+  transition: all 0.375s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.menu-item:after {
+  bottom: 0;
+  right: calc(50% - 30px);
+}
+.menu-item span:before {
+  height: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  content: '';
+  display: block;
+  width: 7px;
+  -webkit-transition: all 0.225s;
+  transition: all 0.225s;
+}
+.menu-item span:after {
+  height: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  content: '';
+  position: absolute;
+  width: 7px;
+  -webkit-transition: all 0.225s;
+  transition: all 0.225s;
+  right: 0;
+  bottom: 0;
+}
+a:hover .menu-item:before, .menu a:hover .menu-item:after {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  width: 30px;
+  opacity: 1;
+}
+a:hover .menu-item:before {
+  left: 0;
+}
+a:hover .menu-item:after {
+  right: 0;
+}
+a:hover .menu-item span:before, .menu a:hover .menu-item span:after {
+  height: 30px;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+.menu {
+  display: inline-block;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.menu a {
+  color: #fff;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.menu s:hover {
+  color: #fff;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;      
+  -webkit-animation: menuglitch 0.4s 500;
+}
+.menu .menu-item {
+  -webkit-transform: scale(1) skew(10deg, 0deg);
+          transform: scale(1) skew(10deg, 0deg);
+}
+.menu .menu-item:before, .menu .menu .menu-item:after {
+  background: #ff0044;
+}
+.menu .menu-item span:before, .menu .menu-item span:after {
+  background: #ff0044;
+}
+.menu:hover .menu-item {
+  -webkit-transform: scale(1) skew(-40deg, 0deg);
+          transform: scale(1) skew(-40deg, 0deg);
+}
+.menu ul {
+    float: right;
+    z-index: 5000;
+    overflow: visible;
+}
+nav a:hover {
+  animation: menuglitch 1s steps(50) infinite;
+}
+
+/* Logo */
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200%;
+  background: -webkit-linear-gradient(rgba(18,16,16,0) 70%, rgba(0,0,0,0.25) 70%), -webkit-linear-gradient(left, rgba(255,0,0,0.08), rgba(0,255,0,0.08), rgba(0,0,255,0.05));
+  background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.25) 50%), linear-gradient(90deg, rgba(255,0,0,0.06), rgba(0,255,0,0.02), rgba(0,0,255,0.06));
+  z-index: 64;
+  background-size: 100% 5px, 3px 100%;
+  pointer-events: none;
+  -webkit-animation-name: animscanlines;
+          animation-name: animscanlines;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
